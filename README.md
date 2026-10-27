@@ -62,15 +62,32 @@ keeps the hub self-contained.
    ```bash
    sha256sum dissectors/myname.wasm
    ```
-3. Open a PR. The [validation workflow](.github/workflows/validate.yml) checks
-   that every entry's `sha256` matches its file, names are unique and safe, and
-   the JSON is well-formed — a mismatched or malformed module can't be merged.
+3. Regenerate the author badges and pages, then commit them:
+   ```bash
+   python3 tools/build_contributors.py
+   ```
+4. Open a PR. The [validation workflow](.github/workflows/validate.yml) checks
+   that every entry's `sha256` matches its file, names are unique and safe, the
+   JSON is well-formed, and the badges are up to date — a mismatched or
+   malformed module can't be merged.
 
-Run the same check locally:
+Run the same checks locally:
 
 ```bash
 python3 validate.py
+python3 tools/build_contributors.py && git diff --exit-code
 ```
+
+## Dissector authors
+
+Publish a dissector and you get a **badge** to show off — see everyone on the
+[dissector authors page](CONTRIBUTORS.md). Each author has a page with a
+copy-paste snippet:
+
+[![tcpcat dissector author](https://raw.githubusercontent.com/NycolazSec/tcpcat-scripts/main/contributors/tcpcat/badge.svg)](https://github.com/NycolazSec/tcpcat-scripts/blob/main/contributors/tcpcat/README.md)
+
+Drop it in your own README and it links back here — a small nod to the people
+who grow the hub.
 
 ## Sandbox
 

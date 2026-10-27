@@ -1,0 +1,23 @@
+# Validation workflow for a tcpcat scripts hub.
+#
+# In the hub repo (e.g. NycolazSec/tcpcat-scripts) this file goes to
+# .github/workflows/validate.yml. It rejects any PR whose index.json has a
+# bad/duplicate/unsafe name, a missing module, or a sha256 that doesn't match
+# the committed .wasm -- so a tampered or mismatched module can't be merged.
+name: Validate hub
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate index.json against the committed modules
+        run: python3 validate.py

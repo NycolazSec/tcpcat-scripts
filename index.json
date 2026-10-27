@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "dissectors": [
+    {
+      "name": "redis",
+      "description": "Detects Redis and reads its version; flags unauthenticated instances.",
+      "version": "1.0.0",
+      "author": "tcpcat",
+      "license": "AGPL-3.0-only",
+      "homepage": "https://github.com/NycolazSec/tcpcat/tree/main/examples/wasm-dissector",
+      "ports": [6379],
+      "url": "dissectors/redis.wasm",
+      "sha256": "fb1d58a1820c7f11b83a720e9a7c8a20518901e278ccef60bb34f8ce205f41c7"
+    }
+  ]
+}

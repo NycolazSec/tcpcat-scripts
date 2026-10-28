@@ -4,4 +4,4 @@ Everyone with a dissector in this hub. Publish one and you get a badge to show o
 
 | author | dissectors | badge |
 |---|---|---|
-| [tcpcat](contributors/tcpcat/README.md) | 1 (`redis`) | ![badge](contributors/tcpcat/badge.svg) |
+| [tcpcat](contributors/tcpcat/README.md) | 4 (`memcached`, `mysql`, `postgres`, `redis`) | ![badge](contributors/tcpcat/badge.svg) |

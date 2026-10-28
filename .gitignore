@@ -1,0 +1,2 @@
+# Build artifacts: the canonical modules live in dissectors/
+sources/**/*.wasm

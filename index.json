@@ -11,6 +11,39 @@
       "ports": [6379],
       "url": "dissectors/redis.wasm",
       "sha256": "fb1d58a1820c7f11b83a720e9a7c8a20518901e278ccef60bb34f8ce205f41c7"
+    },
+    {
+      "name": "mysql",
+      "description": "Detects MySQL / MariaDB and reads the server version from its pre-auth handshake.",
+      "version": "1.0.0",
+      "author": "tcpcat",
+      "license": "AGPL-3.0-only",
+      "homepage": "https://github.com/NycolazSec/tcpcat-scripts/tree/main/sources/mysql",
+      "ports": [3306],
+      "url": "dissectors/mysql.wasm",
+      "sha256": "f5eb580eaf32edc81a44345f7b7527a15ffd73c5beb731a6f27f79bb2213a8d1"
+    },
+    {
+      "name": "memcached",
+      "description": "Detects memcached and reads its version; flags unauthenticated instances.",
+      "version": "1.0.0",
+      "author": "tcpcat",
+      "license": "AGPL-3.0-only",
+      "homepage": "https://github.com/NycolazSec/tcpcat-scripts/tree/main/sources/memcached",
+      "ports": [11211],
+      "url": "dissectors/memcached.wasm",
+      "sha256": "a6927343b1bb48ad048c8f68bf4b64fc53a29d38bfd51f58e93fe464c0b6fa2d"
+    },
+    {
+      "name": "postgres",
+      "description": "Detects PostgreSQL and reports its TLS posture via the pre-auth SSLRequest.",
+      "version": "1.0.0",
+      "author": "tcpcat",
+      "license": "AGPL-3.0-only",
+      "homepage": "https://github.com/NycolazSec/tcpcat-scripts/tree/main/sources/postgres",
+      "ports": [5432],
+      "url": "dissectors/postgres.wasm",
+      "sha256": "22a63b0acc4b79ce59dea2e6951c0044b957ac92ac5b962ca9a9f4167a4f8888"
     }
   ]
 }

@@ -44,6 +44,39 @@
       "ports": [5432],
       "url": "dissectors/postgres.wasm",
       "sha256": "22a63b0acc4b79ce59dea2e6951c0044b957ac92ac5b962ca9a9f4167a4f8888"
+    },
+    {
+      "name": "smtp",
+      "description": "Recognises an SMTP server and reads its greeting (names the mail software).",
+      "version": "1.0.0",
+      "author": "tcpcat",
+      "license": "AGPL-3.0-only",
+      "homepage": "https://github.com/NycolazSec/tcpcat-scripts/tree/main/sources/smtp",
+      "ports": [25, 587],
+      "url": "dissectors/smtp.wasm",
+      "sha256": "06be7b2249ca61abfdc2ed6abfd71abcf8d5bd67f36ee6b80cc8b04e2049a4d2"
+    },
+    {
+      "name": "ftp",
+      "description": "Recognises an FTP server and reads its greeting (names the daemon).",
+      "version": "1.0.0",
+      "author": "tcpcat",
+      "license": "AGPL-3.0-only",
+      "homepage": "https://github.com/NycolazSec/tcpcat-scripts/tree/main/sources/ftp",
+      "ports": [21],
+      "url": "dissectors/ftp.wasm",
+      "sha256": "14b6e1889f96f1f826783c9af323ec674745ba9c4dd12a5f0e696780271613cb"
+    },
+    {
+      "name": "elasticsearch",
+      "description": "Detects Elasticsearch and reads its version from the unauthenticated GET /.",
+      "version": "1.0.0",
+      "author": "tcpcat",
+      "license": "AGPL-3.0-only",
+      "homepage": "https://github.com/NycolazSec/tcpcat-scripts/tree/main/sources/elasticsearch",
+      "ports": [9200],
+      "url": "dissectors/elasticsearch.wasm",
+      "sha256": "bdd6c5862db13a391982915efc3e7ca172c0bb678f30b747f57964e362a48228"
     }
   ]
 }

@@ -77,6 +77,39 @@
       "ports": [9200],
       "url": "dissectors/elasticsearch.wasm",
       "sha256": "bdd6c5862db13a391982915efc3e7ca172c0bb678f30b747f57964e362a48228"
+    },
+    {
+      "name": "mongodb",
+      "description": "Detects MongoDB via the unauthenticated isMaster handshake and estimates its version.",
+      "version": "1.0.0",
+      "author": "tcpcat",
+      "license": "AGPL-3.0-only",
+      "homepage": "https://github.com/NycolazSec/tcpcat-scripts/tree/main/sources/mongodb",
+      "ports": [27017],
+      "url": "dissectors/mongodb.wasm",
+      "sha256": "f3fc414fe2a90a9512e4d434d0ce5f76c7c079dc1761f6aeef183b171ac9c2c2"
+    },
+    {
+      "name": "couchdb",
+      "description": "Detects Apache CouchDB and reads its version from the unauthenticated GET /.",
+      "version": "1.0.0",
+      "author": "tcpcat",
+      "license": "AGPL-3.0-only",
+      "homepage": "https://github.com/NycolazSec/tcpcat-scripts/tree/main/sources/couchdb",
+      "ports": [5984],
+      "url": "dissectors/couchdb.wasm",
+      "sha256": "5f693a65495d1eaa085e61ea9829ab9b9a7f3f74e8fae91cc5af26393458a5ec"
+    },
+    {
+      "name": "mqtt",
+      "description": "Detects an MQTT broker via CONNECT/CONNACK and whether it accepts anonymous clients.",
+      "version": "1.0.0",
+      "author": "tcpcat",
+      "license": "AGPL-3.0-only",
+      "homepage": "https://github.com/NycolazSec/tcpcat-scripts/tree/main/sources/mqtt",
+      "ports": [1883],
+      "url": "dissectors/mqtt.wasm",
+      "sha256": "fbe267d4c8be33a6427020731614406254c5acca155dc565b8b059986c81eeca"
     }
   ]
 }
